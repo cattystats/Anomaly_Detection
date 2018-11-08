@@ -1,10 +1,7 @@
 # Anomaly Detection With Time Series
-Tidy anomaly detection with [Google Trends](https://trends.google.com) data
+Tidy anomaly detection with [Google Trends](https://trends.google.com) data -- anomaly detection using [tidyverse](https://www.tidyverse.org/packages/) package: [anomalize](https://github.com/business-science/anomalize) 
 
 Follow along at [2018 DC R](https://rstats.ai/agenda/) - view [supplementary slides here](https://github.com/cattystats/Anomaly_Detection/blob/master/2018-DC-R-Conference_CZ.pdf)
-
-
-Anomaly detection using [tidyverse](https://www.tidyverse.org/packages/) package: [anomalize](https://github.com/business-science/anomalize) 
 
 Using STL + IQR to detect 2018 [trending news stories](https://www.thecut.com/2018/10/pete-davidson-and-ariana-grandes-engagement-a-timeline.html) 
 ![Pete](https://github.com/cattystats/Anomaly_Detection/blob/master/pete_davidson.png?raw=true)
