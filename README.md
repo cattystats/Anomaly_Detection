@@ -1,5 +1,6 @@
-# Anomaly_Detection
-anomaly detection with [Google Trends](https://trends.google.com) data
+# Anomaly Detection With Time Series
+Anomaly detection, the tidy way
+Demo with [Google Trends](https://trends.google.com) data
 
 Follow along at [2018 DC R](https://rstats.ai/agenda/)!
 
