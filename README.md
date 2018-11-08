@@ -9,7 +9,7 @@ Use STL + IQR to detect 2018 [trending news stories](https://www.thecut.com/2018
 ![Pete](https://raw.githubusercontent.com/cattystats/Anomaly_Detection/master/figures/anomalize_pete_davidson.png)
 
 Use [Twitter's AnomalyDetection](https://github.com/twitter/AnomalyDetection) method to analyze seasonal data (the tidy way)
-![Anomaly Detection](https://raw.githubusercontent.com/cattystats/Anomaly_Detection/master/figures/anomalize_vote_annotated.png)
+![Anomaly Detection](https://raw.githubusercontent.com/cattystats/Anomaly_Detection/master/figures/anomalize_us_vote.png)
 
 Data frame generated using Google Trends package, [gtrendsR](https://github.com/PMassicotte/gtrendsR)
 ![Google Trends](https://raw.githubusercontent.com/cattystats/Anomaly_Detection/master/figures/google_trends_vote.png)
