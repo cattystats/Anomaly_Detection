@@ -50,7 +50,7 @@ google_trends_df_tbl %>%
     time_recompose() %>%
     # Anomaly Visualization
     plot_anomalies(time_recomposed = TRUE) +
-    labs(title = "Google Trends Data - STL + IQR Method",x="Time",y="Relative Interest", subtitle = "United States search volume for 'Movers' between Jan'05-Nov'18"
+    labs(title = "Google Trends Data - STL + IQR Method",x="Time",y="Relative Interest", subtitle = "United States search volume for 'Movers' between Jan'04-Nov'18"
          )
 
 # Twitter + IQR Anomaly Detection
@@ -62,7 +62,7 @@ google_trends_df_tbl %>%
     time_recompose() %>%
     # Anomaly Visualization
     plot_anomalies(time_recomposed = TRUE) +
-    labs(title = "Google Trends Data - Twitter + IQR Method",x="Time",y="Relative Interest", subtitle = "United States search volume for 'Movers' between Jan'05-Nov'18"
+    labs(title = "Google Trends Data - Twitter + IQR Method",x="Time",y="Relative Interest", subtitle = "United States search volume for 'Movers' between Jan'04-Nov'18"
          )
 
 # Twitter and GESD
@@ -72,15 +72,16 @@ google_trends_df_tbl %>%
     time_recompose() %>%
     # Anomaly Visualization
     plot_anomalies(time_recomposed = TRUE) +
-    labs(title = "Google Trends Data - Twitter + GESD Method",x="Time",y="Relative Interest", subtitle = "United States search volume for 'Movers' between Jan'05-Nov'18"
+    labs(title = "Google Trends Data - Twitter + GESD Method",x="Time",y="Relative Interest", subtitle = "United States search volume for 'Movers' between Jan'04-Nov'18"
          )
 
-# look at how anomaly detection works
+# look at how anomaly detection algorithm works
 google_trends_df_tbl %>% 
-  time_decompose(hits, method = "twitter", 
+  time_decompose(hits, method = "stl", 
                  frequency = "auto", trend = "auto") %>%
   anomalize(remainder, method = "gesd", alpha = 0.05, max_anoms = 0.2) %>%
   plot_anomaly_decomposition() 
+
 
 ```
 
