@@ -1,1 +1,1 @@
-folder for exported figures
+folder for exported example figures
