@@ -15,6 +15,7 @@ Use [Twitter's AnomalyDetection](https://github.com/twitter/AnomalyDetection) me
 Data frame generated using Google Trends package, [gtrendsR](https://github.com/PMassicotte/gtrendsR)
 ![Google Trends](https://raw.githubusercontent.com/cattystats/Anomaly_Detection/master/figures/google_trends_vote.png)
 
+---
 ### Quick Start Guide
 
 Download and [install R from CRAN](https://cran.r-project.org/), as well as the [RStudio IDE](https://www.rstudio.com/products/rstudio/download/)
