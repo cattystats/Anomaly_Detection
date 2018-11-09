@@ -1,1 +1,1 @@
-folder for r notebook html output
+folder for R notebook html output
