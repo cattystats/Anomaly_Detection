@@ -3,6 +3,9 @@ Tidy anomaly detection with [Google Trends](https://trends.google.com) data -- a
 
 Follow along at [2018 DC R](https://rstats.ai/agenda/) - view [supplementary slides here](https://github.com/cattystats/Anomaly_Detection/blob/master/2018-DC-R-Slides_CZ.pdf)
 
+![slides](https://raw.githubusercontent.com/cattystats/Anomaly_Detection/master/figures/anomaly.gif)
+
+---
 ### Explore different anomaly detection algorithms:
 
 Use STL + IQR to detect 2018 [trending news stories](https://www.thecut.com/2018/10/pete-davidson-and-ariana-grandes-engagement-a-timeline.html) 
