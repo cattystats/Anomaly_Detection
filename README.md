@@ -1,7 +1,7 @@
 # Anomaly Detection With Time Series
 Tidy anomaly detection with [Google Trends](https://trends.google.com) data -- anomaly detection using [tidyverse](https://www.tidyverse.org/packages/) package: [anomalize](https://github.com/business-science/anomalize) 
 
-Follow along at [2018 DC R](https://rstats.ai/agenda/) - view [supplementary slides here](https://github.com/cattystats/Anomaly_Detection/blob/master/2018-DC-R-Slides_CZ.pdf)
+Follow along at [2018 DC R](https://rstats.ai/agenda/) - view [video here](https://www.youtube.com/watch?v=5nfe835TVcY) and [supplementary slides here](https://github.com/cattystats/Anomaly_Detection/blob/master/2018-DC-R-Slides_CZ.pdf)
 
 ![slides](https://raw.githubusercontent.com/cattystats/Anomaly_Detection/master/figures/anomaly.gif)
 
