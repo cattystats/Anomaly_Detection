@@ -11,7 +11,7 @@ google_trends_df = gtrends(
                    c("vote"), #keywords -- start with one
                    gprop = "web", #choose: web, news, images, froogle, youtube
                    geo = c("US"), #only pull results for US
-                   time = "2005-01-01 2018-11-08")[[1]] #timeframe
+                   time = "today+5-y")[[1]] #timeframe
 
 ```
 
@@ -50,7 +50,7 @@ google_trends_df_tbl %>%
     time_recompose() %>%
     # Anomaly Visualization
     plot_anomalies(time_recomposed = TRUE) +
-    labs(title = "Google Trends Data - STL + IQR Method",x="Time",y="Relative Interest", subtitle = "United States search volume for 'Vote' between Jan'05-Nov'18"
+    labs(title = "Google Trends Data - STL + IQR Method",x="Time",y="Relative Interest", subtitle = "United States search volume for 'Vote' in the last 5 years"
          )
 
 # Twitter + IQR Anomaly Detection
@@ -62,7 +62,7 @@ google_trends_df_tbl %>%
     time_recompose() %>%
     # Anomaly Visualization
     plot_anomalies(time_recomposed = TRUE) +
-    labs(title = "Google Trends Data - Twitter + IQR Method",x="Time",y="Relative Interest", subtitle = "United States search volume for 'Vote' between Jan'05-Nov'18"
+    labs(title = "Google Trends Data - Twitter + IQR Method",x="Time",y="Relative Interest", subtitle = "United States search volume for 'Vote' in the last 5 years"
          )
 
 
@@ -73,7 +73,7 @@ google_trends_df_tbl %>%
     time_recompose() %>%
     # Anomaly Visualization
     plot_anomalies(time_recomposed = TRUE) +
-    labs(title = "Google Trends Data - Twitter + GESD Method",x="Time",y="Relative Interest", subtitle = "United States search volume for 'Vote' between Jan'05-Nov'18"
+    labs(title = "Google Trends Data - Twitter + GESD Method",x="Time",y="Relative Interest", subtitle = "United States search volume for 'Vote' in the last 5 years"
          )
 
 # look at how anomaly detection works
