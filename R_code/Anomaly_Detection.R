@@ -65,7 +65,7 @@ google_trends_df_tbl %>%
   time_recompose() %>%
   # Anomaly Visualization
   plot_anomalies(time_recomposed = TRUE) +
-  labs(title = "Google Trends Data - Twitter + GESD Method",x="Time",y="Relative Interest", subtitle = "United States search volume for 'Movers' between Jan'04-Nov'18"
+  labs(title = "Google Trends Data - Twitter + GESD Method",x="Time",y="Relative Interest", subtitle = "United States search volume for 'Movers' in the last 5 years"
   )
 
 # look at how anomaly detection algorithm works
