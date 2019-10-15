@@ -12,7 +12,7 @@ google_trends_df = gtrends(
   c("movers"), #keywords -- start with one
   gprop = "web", #choose: web, news, images, froogle, youtube
   geo = c("US"), #only pull results for US
-  time = "2004-01-01 2018-11-08")[[1]] #timeframe
+  time = "today+5-y")[[1]] #timeframe
 
 #visualize with ggplot (optional but useful if you're choosing between keywords)
 ggplot(data=google_trends_df, 
@@ -43,7 +43,7 @@ google_trends_df_tbl %>%
   time_recompose() %>%
   # Anomaly Visualization
   plot_anomalies(time_recomposed = TRUE) +
-  labs(title = "Google Trends Data - STL + IQR Method",x="Time",y="Relative Interest", subtitle = "United States search volume for 'Movers' between Jan'04-Nov'18"
+  labs(title = "Google Trends Data - STL + IQR Method",x="Time",y="Relative Interest", subtitle = "United States search volume for 'Movers' in the last 5 years"
   )
 
 # Twitter + IQR Anomaly Detection
@@ -55,7 +55,7 @@ google_trends_df_tbl %>%
   time_recompose() %>%
   # Anomaly Visualization
   plot_anomalies(time_recomposed = TRUE) +
-  labs(title = "Google Trends Data - Twitter + IQR Method",x="Time",y="Relative Interest", subtitle = "United States search volume for 'Movers' between Jan'04-Nov'18"
+  labs(title = "Google Trends Data - Twitter + IQR Method",x="Time",y="Relative Interest", subtitle = "United States search volume for 'Movers' in the last 5 years"
   )
 
 # Twitter and GESD
